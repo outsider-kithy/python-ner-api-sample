@@ -45,3 +45,29 @@ gcloud builds submit --tag asia-northeast1-docker.pkg.dev/ner-app-xxxxxx/nerjapa
 
 `https://flask-app-xxxxxxxxx.asia-northeast1.run.app/?q=文字列`
 にアクセスし、APIが稼働しているか確認。
+
+
+## 仮想環境で動かす場合
+### 仮想環境.venvの作成
+```sh
+python3 -m venv .venv
+```
+
+### 仮想環境を有効化
+```sh
+source .venv/bin/activate
+# 無効化
+deactivate
+```
+
+### 必要なパッケージをインストール
+```sh
+pip install -r requirements.txt
+```
+
+### APIを起動
+```sh
+python3 -m app
+```
+`http://localhost:8080/q=文字列`
+にアクセスし、APIが稼働しているか確認。

@@ -1,12 +1,14 @@
-import os
-from flask import Flask, request #追加
+from flask import Flask, request, Blueprint
 from transformers import BertJapaneseTokenizer, BertForTokenClassification
 from transformers import pipeline
 import json
 
-app = Flask(__name__)
+company = Blueprint(
+	"company",
+	__name__
+)
 
-@app.route("/")
+@company.route("/")
 def index():
 	text = ""
 	if request.args.get("q") is not None:
@@ -48,6 +50,3 @@ def index():
 	# resultsをjson形式で返す
 	return json.dumps(results, ensure_ascii=False)
 
-if __name__=="__main__":
-	port = int(os.environ.get("PORT", 8080))
-	app.run(host="0.0.0.0", port=port)
