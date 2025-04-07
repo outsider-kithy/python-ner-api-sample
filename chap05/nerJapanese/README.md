@@ -30,17 +30,17 @@ gcloud config set project プロジェクトID
 
 ## ローカルとリモートのイメージをタグ付け
 ```sh
-docker tag flask-app asia-northeast1-docker.pkg.dev/ner-app-455807/nerjapanese/flask-app
+docker tag flask-app asia-northeast1-docker.pkg.dev/ner-app-xxxxxx/nerjapanese/flask-app
 ```
 
 ## Artifact Registoryにイメージをpush
 ```sh
-docker push asia-northeast1-docker.pkg.dev/ner-app-455807/nerjapanese/flask-app
+docker push asia-northeast1-docker.pkg.dev/ner-app-xxxxxx/nerjapanese/flask-app
 ```
 
 ## Google Cloud上でコンテナをビルド
 ```sh
-gcloud builds submit --tag asia-northeast1-docker.pkg.dev/ner-app-455807/nerjapanese/flask-app
+gcloud builds submit --tag asia-northeast1-docker.pkg.dev/ner-app-xxxxxx/nerjapanese/flask-app
 ```
 
 `https://flask-app-xxxxxxxxx.asia-northeast1.run.app/?q=文字列`
