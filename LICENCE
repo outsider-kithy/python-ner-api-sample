@@ -1,0 +1,26 @@
+This sample code is distributed under the Creative Commons Attribution-ShareAlike 3.0 Unported License (CC BY-SA 3.0).
+
+The application includes or is derived from the "
+bert-ner-japanese" natural language processing model, 
+originally created by jurabi, available at https://huggingface.co/jurabi/bert-ner-japanese.
+
+You are free to share and adapt this work for any purpose, even commercially, under the following terms:
+
+1. Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+2. ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
+
+Full license text: https://creativecommons.org/licenses/by-sa/3.0/
+
+Copyright © [outsider-kithy], [2025]
+
+
+このサンプルコードは、Creative Commons Attribution-ShareAlike 3.0（CC BY-SA 3.0）ライセンスのもとで公開されています。詳細はリポジトリ内の LICENSE ファイルを参照してください。
+
+- 改変: 可
+- 再利用: 可
+- 再頒布: 可
+
+本アプリケーションは CC BY-SA 3.0 ライセンスで公開されている自然言語処理モデルを利用しているため、以下の条件を遵守してください：
+
+- 表示（Attribution）: 作者名（outsider-kithy）、作品名（python-ner-api-sample）、ライセンス（CC BY-SA 3.0）、元URL（https://github.com/outsider-kithy/python-ner-api-sample）などを明記する必要があります。
+- 継承（ShareAlike）: アプリケーションやその改変版を配布する場合は、同じライセンス（CC BY-SA 3.0）で公開する必要があります。

@@ -10,6 +10,7 @@ company = Blueprint(
 
 @company.route("/")
 def index():
+	
 	text = ""
 	if request.args.get("q") is not None:
 		text = request.args.get("q")
@@ -49,4 +50,3 @@ def index():
 
 	# resultsをjson形式で返す
 	return json.dumps(results, ensure_ascii=False)
-
