@@ -23,7 +23,7 @@ def index():
 	# 予測
 	outputs = ner_pipeline(text)
 	print(outputs)
-	#return json.dump(outputs)
+	#return "Hello, World"
 
 	# entityが「B-法人名」もしくは「I-法人名」のワードを抽出してnames_tokens配列に格納
 	names_tokens = []
